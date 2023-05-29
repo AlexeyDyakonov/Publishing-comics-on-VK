@@ -5,20 +5,20 @@
 ### Как установить
 
 Нужно заполнить файл окружения (файл .env) с переменной:
-- ACCESS_TOKEN- Токен VK, данный ключ получить можно на сайте https://api.superjob.ru/; 
+- VK_ACCESS_TOKEN- Токен VK, данный ключ получить можно на сайте https://api.superjob.ru/; 
 - VK_GROUP_ID- ID группы VK; (у пользователя положительное число, у сообщества отрицательное)
 
 Узнать ID приложения можно из адреса: [Список приложений](https://vk.com/apps?act=manage) 
 [Как узнать VK ID](https://regvk.com/id/)
 
-Узнать [ACCESS_TOKEN](https://dev.vk.com/api/access-token/implicit-flow-user)
+Узнать [VK_ACCESS_TOKEN](https://dev.vk.com/api/access-token/implicit-flow-user)
 Убрать параметр redirect_uri у запроса на ключ.
 Параметр scope указать через запятую, вот так: scope=photos,groups,wall.
 В id необходимо прописать ID приложения
 
 Пример заполнения файла .env:
 
-- АCCESS_TOKEN=c34t23gb45rg234
+- VK_АCCESS_TOKEN=c34t23gb45rg234
 - VK_GROUP_ID=125165165
 
 Python3 должен быть уже установлен. 
